@@ -16,5 +16,5 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'your-image-name', '.']
 
-logs_bucket: CLOUD_LOGGING_ONLY
+logs_bucket: 'gs://cloud-build-logging-az'
 # [END cloudbuild_npm_node]
