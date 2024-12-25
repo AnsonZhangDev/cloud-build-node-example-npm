@@ -12,9 +12,6 @@ steps:
   - name: node
     entrypoint: npm
     args: ["run", "build"]
-  # logging
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'your-image-name', '.']
 
 logs_bucket: 'gs://cloud-build-logging-az'
 # [END cloudbuild_npm_node]
